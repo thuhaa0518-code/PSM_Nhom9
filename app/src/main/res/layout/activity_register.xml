@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="28dp">
+
+        <!-- Logo row -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginTop="32dp">
+
+            <ImageView
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:background="@drawable/bg_logo_icon"
+                android:src="@android:drawable/ic_menu_today"
+                android:tint="#FFFFFF"
+                android:padding="7dp"
+                android:scaleType="fitCenter"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PSM"
+                android:textSize="32sp"
+                android:textStyle="bold"
+                android:textColor="#A855F7"
+                android:layout_marginStart="8dp"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Personal Schedule Manager"
+            android:textSize="13sp"
+            android:textColor="#9CA3AF"
+            android:layout_marginTop="4dp"/>
+
+        <!-- Title -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TẠO TÀI KHOẢN"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="#111827"
+            android:layout_marginTop="24dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Quản lý thời gian, làm chủ cuộc sống"
+            android:textSize="13sp"
+            android:textColor="#6B7280"
+            android:layout_marginTop="4dp"/>
+
+        <!-- HỌ VÀ TÊN -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="HỌ VÀ TÊN"
+            android:textSize="11sp"
+            android:textStyle="bold"
+            android:letterSpacing="0.05"
+            android:textColor="#374151"
+            android:layout_marginTop="28dp"/>
+
+        <EditText
+            android:id="@+id/etRegFullName"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:background="@drawable/bg_input_field"
+            android:hint="Nhập tên"
+            android:textColorHint="#9CA3AF"
+            android:textColor="#111827"
+            android:textSize="14sp"
+            android:paddingHorizontal="16dp"
+            android:inputType="textPersonName"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="20dp"/>
+
+        <!-- EMAIL -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="EMAIL"
+            android:textSize="11sp"
+            android:textStyle="bold"
+            android:letterSpacing="0.05"
+            android:textColor="#374151"/>
+
+        <EditText
+            android:id="@+id/etRegEmail"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:background="@drawable/bg_input_field"
+            android:hint="Nhập email"
+            android:textColorHint="#9CA3AF"
+            android:textColor="#111827"
+            android:textSize="14sp"
+            android:paddingHorizontal="16dp"
+            android:inputType="textEmailAddress"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="20dp"/>
+
+        <!-- MẬT KHẨU -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MẬT KHẨU"
+            android:textSize="11sp"
+            android:textStyle="bold"
+            android:letterSpacing="0.05"
+            android:textColor="#374151"/>
+
+        <EditText
+            android:id="@+id/etRegPassword"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:background="@drawable/bg_input_field"
+            android:textColorHint="#9CA3AF"
+            android:textColor="#111827"
+            android:textSize="14sp"
+            android:paddingHorizontal="16dp"
+            android:inputType="textPassword"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="20dp"/>
+
+        <!-- XÁC NHẬN MẬT KHẨU -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="XÁC NHẬN MẬT KHẨU"
+            android:textSize="11sp"
+            android:textStyle="bold"
+            android:letterSpacing="0.05"
+            android:textColor="#374151"/>
+
+        <EditText
+            android:id="@+id/etRegConfirmPassword"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:background="@drawable/bg_input_field"
+            android:textColorHint="#9CA3AF"
+            android:textColor="#111827"
+            android:textSize="14sp"
+            android:paddingHorizontal="16dp"
+            android:inputType="textPassword"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="20dp"/>
+
+        <!-- Đăng Kí button -->
+        <Button
+            android:id="@+id/btnRegister"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:background="@drawable/bg_gradient_button_login"
+            android:backgroundTint="@null"
+            android:text="Đăng Kí"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginTop="8dp"
+            android:stateListAnimator="@null"/>
+
+        <!-- Bottom link -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Đã có tài khoản? "
+                android:textSize="13sp"
+                android:textColor="#6B7280"/>
+
+            <TextView
+                android:id="@+id/tvGoLogin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Đăng nhập"
+                android:textSize="13sp"
+                android:textStyle="bold"
+                android:textColor="#A855F7"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

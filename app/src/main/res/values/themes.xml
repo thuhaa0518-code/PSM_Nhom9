@@ -1,0 +1,16 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.PMS_Nhom9" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">#A855F7</item>
+        <item name="colorPrimaryVariant">#7C3AED</item>
+        <item name="colorSecondary">#EC4899</item>
+        <item name="badgeStyle">@style/PSMBadgeStyle</item>
+    </style>
+
+    <style name="PSMBadgeStyle" parent="Widget.MaterialComponents.Badge">
+        <item name="backgroundColor">#EF4444</item>
+        <item name="badgeTextColor">#FFFFFF</item>
+    </style>
+
+    <style name="Theme.PMS_Nhom9" parent="Base.Theme.PMS_Nhom9" />
+</resources>

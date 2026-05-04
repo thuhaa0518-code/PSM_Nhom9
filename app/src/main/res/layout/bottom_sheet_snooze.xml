@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/bg_bottom_sheet"
+    android:paddingHorizontal="24dp"
+    android:paddingTop="20dp"
+    android:paddingBottom="32dp">
+
+    <!-- Handle bar -->
+    <View
+        android:layout_width="40dp"
+        android:layout_height="4dp"
+        android:background="@drawable/bg_sheet_handle"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="20dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nhắc lại vào lúc..."
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#111827"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Option 1 -->
+    <LinearLayout
+        android:id="@+id/optionSnooze5"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5 phút nữa"
+            android:textSize="15sp"
+            android:textColor="#111827"/>
+    </LinearLayout>
+
+    <View android:layout_width="match_parent" android:layout_height="1dp" android:background="#F3F4F6"/>
+
+    <!-- Option 2 -->
+    <LinearLayout
+        android:id="@+id/optionSnooze10"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10 phút nữa"
+            android:textSize="15sp"
+            android:textColor="#111827"/>
+    </LinearLayout>
+
+    <View android:layout_width="match_parent" android:layout_height="1dp" android:background="#F3F4F6"/>
+
+    <!-- Option 3 -->
+    <LinearLayout
+        android:id="@+id/optionSnooze15"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="15 phút nữa"
+            android:textSize="15sp"
+            android:textColor="#111827"/>
+    </LinearLayout>
+
+</LinearLayout>

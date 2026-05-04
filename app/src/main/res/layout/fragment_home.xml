@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!-- HEADER -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingHorizontal="20dp"
+        android:paddingTop="20dp"
+        android:paddingBottom="4dp"
+        android:gravity="center_vertical">
+
+        <!-- Left: day + greeting -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvDayLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Thứ Hai, 27 tháng 1"
+                android:textSize="13sp"
+                android:textColor="#6B7280"/>
+
+            <TextView
+                android:id="@+id/tvGreeting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Chào bạn! ✦"
+                android:textSize="26sp"
+                android:textStyle="bold"
+                android:textColor="#111827"
+                android:layout_marginTop="2dp"/>
+        </LinearLayout>
+
+        <!-- Right: avatar -->
+        <TextView
+            android:id="@+id/tvAvatar"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:background="@drawable/bg_avatar_purple"
+            android:text="M"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:gravity="center"/>
+    </LinearLayout>
+
+    <!-- DATE STRIP -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvDateStrip"
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:paddingHorizontal="8dp"
+        android:layout_marginTop="12dp"
+        android:clipToPadding="false"/>
+
+    <!-- FILTER CHIPS -->
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="20dp"
+        android:layout_marginTop="10dp"
+        android:scrollbars="none"
+        android:clipToPadding="false">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/chipAll"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:background="@drawable/bg_chip_purple"
+                android:text="0 sự kiện"
+                android:textColor="#7C3AED"
+                android:textSize="12sp"
+                android:paddingHorizontal="14dp"
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/chipHighPriority"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:background="@drawable/bg_chip_red"
+                android:text="0 ưu tiên cao"
+                android:textColor="#DC2626"
+                android:textSize="12sp"
+                android:paddingHorizontal="14dp"
+                android:gravity="center"
+                android:layout_marginStart="8dp"/>
+
+            <TextView
+                android:id="@+id/chipOffline"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:background="@drawable/bg_chip_green"
+                android:text="Offline"
+                android:textColor="#059669"
+                android:textSize="12sp"
+                android:paddingHorizontal="14dp"
+                android:gravity="center"
+                android:layout_marginStart="8dp"/>
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <!-- SECTION HEADER -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingHorizontal="20dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="4dp"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/tvSectionLabel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Hôm nay"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#111827"/>
+
+        <TextView
+            android:id="@+id/tvSeeAll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tất cả →"
+            android:textSize="13sp"
+            android:textColor="#A855F7"/>
+    </LinearLayout>
+
+    <!-- EVENT LIST -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvEvents"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:paddingTop="8dp"
+        android:clipToPadding="false"/>
+
+    <!-- EMPTY STATE -->
+    <LinearLayout
+        android:id="@+id/layoutEmpty"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Không có sự kiện hôm nay"
+            android:textSize="15sp"
+            android:textColor="#9CA3AF"/>
+    </LinearLayout>
+
+</LinearLayout>

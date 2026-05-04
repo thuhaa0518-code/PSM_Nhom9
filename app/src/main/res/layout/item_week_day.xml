@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="88dp"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <!-- Tên thứ: T2, T3... CN -->
+    <TextView
+        android:id="@+id/tvDayName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="T2"
+        android:textSize="12sp"
+        android:textColor="#9CA3AF"/>
+
+    <!-- Số ngày: circle tím khi selected -->
+    <TextView
+        android:id="@+id/tvDayNumber"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#111827"
+        android:layout_marginTop="4dp"/>
+
+    <!-- Chấm màu sự kiện -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="6dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="3dp">
+
+        <View android:id="@+id/dot1"
+            android:layout_width="5dp"
+            android:layout_height="5dp"
+            android:background="@drawable/bg_oval_purple"
+            android:visibility="gone"/>
+        <View android:id="@+id/dot2"
+            android:layout_width="5dp"
+            android:layout_height="5dp"
+            android:background="@drawable/bg_oval_purple"
+            android:visibility="gone"
+            android:layout_marginStart="3dp"/>
+        <View android:id="@+id/dot3"
+            android:layout_width="5dp"
+            android:layout_height="5dp"
+            android:background="@drawable/bg_oval_purple"
+            android:visibility="gone"
+            android:layout_marginStart="3dp"/>
+    </LinearLayout>
+
+</LinearLayout>

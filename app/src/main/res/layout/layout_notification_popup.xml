@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/bg_notif_popup"
+    android:padding="16dp"
+    android:elevation="12dp">
+
+    <!-- Top row: label + time -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="6dp">
+
+        <TextView
+            android:id="@+id/tvPopupLabel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Sắp tới"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            android:textColor="#6366F1"/>
+
+        <TextView
+            android:id="@+id/tvPopupTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="30 phút nữa"
+            android:textSize="12sp"
+            android:textColor="#9CA3AF"/>
+    </LinearLayout>
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/tvPopupTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Họp nhóm BTL"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="#111827"
+        android:layout_marginBottom="4dp"/>
+
+    <!-- Subtitle -->
+    <TextView
+        android:id="@+id/tvPopupSubtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Thư viện tầng 3. 10:30-12:00. 4 thành viên"
+        android:textSize="13sp"
+        android:textColor="#6B7280"
+        android:layout_marginBottom="14dp"/>
+
+    <!-- Action buttons -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnPopupSnooze"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:text="Nhắc lại"
+            android:textColor="#D97706"
+            android:textSize="13sp"
+            android:background="@drawable/bg_btn_yellow_light"
+            android:stateListAnimator="@null"/>
+
+        <Button
+            android:id="@+id/btnPopupDetail"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:text="Xem chi tiết"
+            android:textColor="#FFFFFF"
+            android:textSize="13sp"
+            android:background="@drawable/bg_btn_urgent"
+            android:layout_marginStart="8dp"
+            android:stateListAnimator="@null"/>
+
+        <Button
+            android:id="@+id/btnPopupDismiss"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:text="Bỏ qua"
+            android:textColor="#374151"
+            android:textSize="13sp"
+            android:background="@drawable/bg_btn_gray_light"
+            android:layout_marginStart="8dp"
+            android:stateListAnimator="@null"/>
+    </LinearLayout>
+
+</LinearLayout>

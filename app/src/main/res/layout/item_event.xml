@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/cardEvent"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingHorizontal="4dp"
+    android:paddingVertical="6dp"
+    android:gravity="top">
+
+    <!-- Time -->
+    <TextView
+        android:id="@+id/tvEventTime"
+        android:layout_width="52dp"
+        android:layout_height="wrap_content"
+        android:text="08:00"
+        android:textSize="12sp"
+        android:textColor="#9CA3AF"
+        android:layout_marginTop="14dp"/>
+
+    <!-- Color dot -->
+    <View
+        android:id="@+id/viewColorDot"
+        android:layout_width="12dp"
+        android:layout_height="12dp"
+        android:background="@drawable/bg_oval_purple"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="14dp"/>
+
+    <!-- Event card -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:background="@drawable/bg_section_card"
+        android:paddingHorizontal="14dp"
+        android:paddingVertical="12dp">
+
+        <TextView
+            android:id="@+id/tvEventTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tên sự kiện"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="#111827"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="4dp"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="📍"
+                android:textSize="11sp"/>
+
+            <TextView
+                android:id="@+id/tvEventLocation"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text=""
+                android:textSize="12sp"
+                android:textColor="#6B7280"
+                android:layout_marginStart="4dp"/>
+
+            <TextView
+                android:id="@+id/tvEventDuration"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1 tiếng"
+                android:textSize="12sp"
+                android:textColor="#9CA3AF"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

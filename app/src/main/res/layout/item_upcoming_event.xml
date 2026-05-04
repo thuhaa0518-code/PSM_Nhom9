@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_white_card"
+    android:orientation="horizontal"
+    android:padding="14dp"
+    android:layout_marginBottom="10dp"
+    android:gravity="center_vertical"
+    android:elevation="1dp">
+
+    <!-- Date column: số ngày + tên thứ -->
+    <LinearLayout
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/tvUpcomingDay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="28"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="#A855F7"/>
+
+        <TextView
+            android:id="@+id/tvUpcomingDayName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="T4"
+            android:textSize="11sp"
+            android:textColor="#9CA3AF"/>
+    </LinearLayout>
+
+    <!-- Content: title + time + location -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvUpcomingTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tên sự kiện"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textColor="#111827"/>
+
+        <TextView
+            android:id="@+id/tvUpcomingTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="08:00 · Địa điểm"
+            android:textSize="12sp"
+            android:textColor="#9CA3AF"
+            android:layout_marginTop="3dp"/>
+    </LinearLayout>
+
+</LinearLayout>

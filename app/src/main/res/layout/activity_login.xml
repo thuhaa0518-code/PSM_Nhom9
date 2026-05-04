@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="28dp">
+
+        <!-- Logo row -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginTop="48dp">
+
+            <ImageView
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:background="@drawable/bg_logo_icon"
+                android:src="@android:drawable/ic_menu_today"
+                android:tint="#FFFFFF"
+                android:padding="7dp"
+                android:scaleType="fitCenter"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PSM"
+                android:textSize="32sp"
+                android:textStyle="bold"
+                android:textColor="#A855F7"
+                android:layout_marginStart="8dp"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Personal Schedule Manager"
+            android:textSize="13sp"
+            android:textColor="#9CA3AF"
+            android:layout_marginTop="4dp"/>
+
+        <!-- Welcome title -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CHÀO MỪNG TRỞ LẠI"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="#111827"
+            android:layout_marginTop="40dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Quản lý thời gian, làm chủ cuộc sống"
+            android:textSize="13sp"
+            android:textColor="#6B7280"
+            android:layout_marginTop="4dp"/>
+
+        <!-- EMAIL label -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="EMAIL / MÃ SỐ SINH VIÊN"
+            android:textSize="11sp"
+            android:textStyle="bold"
+            android:letterSpacing="0.05"
+            android:textColor="#374151"
+            android:layout_marginTop="32dp"/>
+
+        <EditText
+            android:id="@+id/etLoginInput"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:background="@drawable/bg_input_field"
+            android:hint="Nhập email hoặc MSSV"
+            android:textColorHint="#9CA3AF"
+            android:textColor="#111827"
+            android:textSize="14sp"
+            android:paddingHorizontal="16dp"
+            android:inputType="text"
+            android:layout_marginTop="8dp"/>
+
+        <!-- PASSWORD label -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MẬT KHẨU"
+            android:textSize="11sp"
+            android:textStyle="bold"
+            android:letterSpacing="0.05"
+            android:textColor="#374151"
+            android:layout_marginTop="20dp"/>
+
+        <EditText
+            android:id="@+id/etLoginPassword"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:background="@drawable/bg_input_field"
+            android:textColorHint="#9CA3AF"
+            android:textColor="#111827"
+            android:textSize="14sp"
+            android:paddingHorizontal="16dp"
+            android:inputType="textPassword"
+            android:layout_marginTop="8dp"/>
+
+        <!-- Quên mật khẩu -->
+        <TextView
+            android:id="@+id/tvForgotPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Quên mật khẩu?"
+            android:textSize="13sp"
+            android:textColor="#A855F7"
+            android:layout_gravity="end"
+            android:layout_marginTop="8dp"/>
+
+        <!-- Login button -->
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:background="@drawable/bg_gradient_button_login"
+            android:backgroundTint="@null"
+            android:text="Đăng nhập"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginTop="24dp"
+            android:stateListAnimator="@null"/>
+
+        <!-- Divider with text -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginTop="28dp">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1"
+                android:background="#E5E7EB"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="  Chưa có tài khoản?  "
+                android:textSize="13sp"
+                android:textColor="#6B7280"/>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1"
+                android:background="#E5E7EB"/>
+        </LinearLayout>
+
+        <!-- Bottom buttons: Google + MSSV -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="16dp">
+
+            <Button
+                android:id="@+id/btnGoRegister"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_outline_button"
+                android:text="Google"
+                android:textColor="#374151"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:stateListAnimator="@null"/>
+
+            <View
+                android:layout_width="12dp"
+                android:layout_height="1dp"/>
+
+            <Button
+                android:id="@+id/btnMSSV"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_outline_button"
+                android:text="MSSV"
+                android:textColor="#374151"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:stateListAnimator="@null"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

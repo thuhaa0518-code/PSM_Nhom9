@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginBottom="12dp">
+
+    <!-- Card: background màu thay đổi theo loại qua code -->
+    <LinearLayout
+        android:id="@+id/cardRoot"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/bg_notif_card_blue"
+        android:paddingHorizontal="16dp"
+        android:paddingVertical="14dp">
+
+        <!-- Top row: label + time -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/tvNotifLabel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Sắp tới"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:textColor="#6366F1"/>
+
+            <TextView
+                android:id="@+id/tvNotifTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="30 phút nữa"
+                android:textSize="12sp"
+                android:textColor="#9CA3AF"/>
+        </LinearLayout>
+
+        <!-- Title row with icon -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginTop="6dp">
+
+            <TextView
+                android:id="@+id/tvNotifIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="👥"
+                android:textSize="14sp"
+                android:layout_marginEnd="6dp"/>
+
+            <TextView
+                android:id="@+id/tvNotifTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Họp nhóm BTL"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:textColor="#111827"/>
+        </LinearLayout>
+
+        <!-- Subtitle -->
+        <TextView
+            android:id="@+id/tvNotifSubtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Thư viện tầng 3. 10:30-12:00"
+            android:textSize="13sp"
+            android:textColor="#6B7280"
+            android:layout_marginTop="2dp"/>
+
+        <!-- Action buttons -->
+        <LinearLayout
+            android:id="@+id/layoutActions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="12dp">
+
+            <Button
+                android:id="@+id/btnAction1"
+                android:layout_width="wrap_content"
+                android:layout_height="36dp"
+                android:text="Nhắc lại"
+                android:textColor="#D97706"
+                android:textSize="12sp"
+                android:background="@drawable/bg_btn_yellow_light"
+                android:backgroundTint="@null"
+                android:paddingHorizontal="16dp"
+                android:stateListAnimator="@null"/>
+
+            <Button
+                android:id="@+id/btnAction2"
+                android:layout_width="wrap_content"
+                android:layout_height="36dp"
+                android:text="Xem chi tiết"
+                android:textColor="#FFFFFF"
+                android:textSize="12sp"
+                android:background="@drawable/bg_btn_urgent"
+                android:backgroundTint="@null"
+                android:paddingHorizontal="16dp"
+                android:layout_marginStart="8dp"
+                android:stateListAnimator="@null"/>
+
+            <Button
+                android:id="@+id/btnAction3"
+                android:layout_width="wrap_content"
+                android:layout_height="36dp"
+                android:text="Bỏ qua"
+                android:textColor="#374151"
+                android:textSize="12sp"
+                android:background="@drawable/bg_btn_gray_light"
+                android:backgroundTint="@null"
+                android:paddingHorizontal="16dp"
+                android:layout_marginStart="8dp"
+                android:stateListAnimator="@null"
+                android:visibility="visible"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

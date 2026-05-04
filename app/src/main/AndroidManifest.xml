@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS"/>
+    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM"/>
+    <uses-permission android:name="android.permission.USE_EXACT_ALARM"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:usesCleartextTraffic="true"
+        android:theme="@style/Theme.PMS_Nhom9">
+
+        <activity
+            android:name=".activities.LoginActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".activities.RegisterActivity" android:exported="false" />
+        <activity android:name=".activities.MainActivity" android:exported="false" />
+        <activity android:name=".activities.ForgotPasswordActivity" android:exported="false" />
+        <activity android:name=".activities.AddEventActivity" android:exported="false"
+            android:windowSoftInputMode="adjustResize"/>
+        <activity android:name=".activities.EventDetailActivity" android:exported="false"/>
+        <activity android:name=".activities.FocusModeActivity" android:exported="false"/>
+
+        <!-- Notification BroadcastReceiver -->
+        <receiver
+            android:name=".receivers.NotificationReceiver"
+            android:exported="true"/>
+
+        <!-- Boot receiver để khôi phục alarm sau khi tắt máy -->
+        <receiver
+            android:name=".receivers.BootReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.QUICKBOOT_POWERON"/>
+            </intent-filter>
+        </receiver>
+
+    </application>
+
+</manifest>

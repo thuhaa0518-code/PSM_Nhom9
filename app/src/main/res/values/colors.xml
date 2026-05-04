@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Brand -->
+    <color name="colorPrimary">#A855F7</color>
+    <color name="colorPrimaryDark">#7C3AED</color>
+    <color name="colorAccentPink">#EC4899</color>
+    <color name="colorBackground">#F0EFFE</color>
+    <color name="colorTextPrimary">#111827</color>
+    <color name="colorTextSecondary">#6B7280</color>
+    <color name="colorTextHint">#9CA3AF</color>
+    <color name="colorBorder">#E5E7EB</color>
+    <color name="colorRed">#EF4444</color>
+    <color name="colorGreen">#10B981</color>
+    <color name="colorYellow">#F59E0B</color>
+    <color name="colorBlue">#3B82F6</color>
+    <color name="colorSurface">#FFFFFF</color>
+    <color name="colorDivider">#F3F4F6</color>
+
+    <!-- Legacy aliases (keep for existing code) -->
+    <color name="psm_primary">#A855F7</color>
+    <color name="psm_primary_dark">#7C3AED</color>
+    <color name="psm_primary_light">#EDE9FE</color>
+    <color name="psm_on_primary">#FFFFFF</color>
+    <color name="psm_background">#F0EFFE</color>
+    <color name="psm_surface">#FFFFFF</color>
+    <color name="psm_text_primary">#111827</color>
+    <color name="psm_text_secondary">#6B7280</color>
+    <color name="psm_border">#E5E7EB</color>
+    <color name="event_red">#EF4444</color>
+    <color name="event_blue">#3B82F6</color>
+    <color name="event_green">#22C55E</color>
+    <color name="event_yellow">#EAB308</color>
+    <color name="event_purple">#A855F7</color>
+    <color name="event_pink">#EC4899</color>
+</resources>
